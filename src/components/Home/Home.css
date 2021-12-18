@@ -1,0 +1,32 @@
+
+.service-text{
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* .service-text h2{
+color: #BC74A5;
+font-weight: 600;
+font-size: 40px;
+} */
+.service-text h1{
+color:#0E54AE ;
+font-size: 80px;
+font-weight: 600;
+}
+.service-btn{
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px){
+    .service-text h2{
+        color: #BC74A5;
+        font-weight: 300;
+        font-size: 40px;
+        }
+        
+    .service-text h1{
+            color:#0E54AE ;
+            font-size: 60px;
+            font-weight: 400;
+            }
+}

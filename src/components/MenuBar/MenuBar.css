@@ -1,0 +1,11 @@
+.logo{
+    height:30px;
+}
+.menubar .item{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.menubar .item:hover{
+    color:brown;
+}

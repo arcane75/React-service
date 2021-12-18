@@ -1,0 +1,14 @@
+.about-text{
+    margin: 50px;
+    text-align: justify;
+}
+.about-img{
+    background-image: url(../../images/about-us.png);
+    height: 350px;
+}
+.about-text h2{
+    color: goldenrod;
+}
+.about-text h4{
+    color:cadetblue; 
+}

@@ -1,0 +1,40 @@
+.home-service-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.home-service:hover{
+    border: 1px solid aqua;
+}
+
+.home-service-container img{
+    width:100%;
+    margin-bottom: 20px;
+    height: 250px;
+}
+.home-service-container h3{
+    color: #115278;
+}
+
+.home-service-container p{
+    text-align: justify;
+    color:#757575;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+@media screen and (max-width:600px){
+    .home-service-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.home-service-container img{
+    width:80%;
+    margin-bottom: 10px;
+}
+}

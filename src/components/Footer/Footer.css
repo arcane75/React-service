@@ -1,0 +1,36 @@
+.icon {
+    margin: 3px;
+    padding:3px;
+    background-color: #115278;
+    color: rgb(155, 155, 155);
+    font-size: 30px;
+  }
+  .icon:hover {
+    background-color: rgb(207, 12, 12);
+  }
+  .item{
+    text-decoration: none;
+  }
+  .item:hover{
+    color: gold;
+  }
+  .footer-menu {
+    list-style: none;
+    margin-top: 20px;
+    font-size: 30px;
+    cursor: pointer;
+   
+  }
+  
+  .footer-input {
+    padding: 8px;
+    border: none;
+    outline: none;
+    background-color: rgb(235, 224, 224);
+  }
+  .footer-container {
+    background-color: #233542;
+    padding: 50px;
+    color: rgb(216, 209, 209);
+  }
+  
