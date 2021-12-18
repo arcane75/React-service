@@ -2,6 +2,8 @@ import React from 'react';
 import Banner from '../Banner/Banner';
 import Brand from '../Brand/Brand';
 import CaroselReview from '../CaroselReview/CaroselReview';
+import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 import ServiceHome from '../Services/ServiceHome';
 import Subscription from '../Subscribe/Subscription';
 import './Home.css';
@@ -9,6 +11,7 @@ import './Home.css';
 const Home = () => {
     return (
         <div>
+            <Header></Header>
             <Banner></Banner>
             <div className="container my-3">
                 <div className="row serviceinfo service-text">
@@ -19,6 +22,8 @@ const Home = () => {
             <CaroselReview></CaroselReview>
             <Brand></Brand>
             <Subscription></Subscription>
+
+           
         </div>
     );
 };

@@ -4,6 +4,7 @@ import AllProduct from '../AllProduct/AllProduct';
 import { addToDb } from '../../utilities/fakedb';
 import useCart from '../../hooks/useCart';
 import Brand from '../Brand/Brand';
+import Header from '../Header/Header';
 const AllProducts = () => {
     const [allProducts, setAllProducts] = useState([]);
     const [cart, setCart] = useCart();
@@ -33,6 +34,7 @@ const AllProducts = () => {
 
     return (
         <div>
+            <Header></Header>
             <Brand></Brand>
             <div className="home-service-container">
                 {allProducts.length === 0 ? <Spinner animation="border" variant="primary" /> :
@@ -46,6 +48,7 @@ const AllProducts = () => {
                     )
                 }
             </div>
+        
         </div>
     );
 };

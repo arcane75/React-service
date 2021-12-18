@@ -1,6 +1,6 @@
 import { Alert, CircularProgress } from "@mui/material";
 import { useState, React } from "react";
-import { useLocation, useHistory } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 
@@ -17,14 +17,14 @@ const UserLogin = () => {
         processLogin } = useAuth();
 
     const location = useLocation();
-    const history = useHistory();
+    let navigate  = useNavigate();
 
     const toggleLogin = e => {
         setIsLogin(e.target.checked)
     }
 
     const handleGoogleSignIn = () => {
-        signInUsingGoogle(location, history)
+        signInUsingGoogle(location, navigate)
     }
     const handleOnBlur = e => {
         const field = e.target.name;
@@ -43,8 +43,8 @@ const UserLogin = () => {
     }
 
     const handleLoginSubmit = e => {
-        registerNewUser(loginData.email, loginData.password, loginData.name, history);
-        processLogin(loginData.email, loginData.password, location, history);
+        registerNewUser(loginData.email, loginData.password, loginData.name, navigate);
+        processLogin(loginData.email, loginData.password, location, navigate);
         e.preventDefault();
     }
 

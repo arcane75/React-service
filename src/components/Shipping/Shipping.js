@@ -2,12 +2,12 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import useAuth from '../../hooks/useAuth';
 import { clearTheCart, getStoredCart } from '../../utilities/fakedb';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import './Shipping.css';
 
 const Shipping = () => {
 
-    const history = useHistory();
+    let navigate = useNavigate();
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const { user } = useAuth();
 
@@ -30,7 +30,7 @@ const Shipping = () => {
                     alert('Order processed Successfully');
                     clearTheCart();
                     reset();
-                    history.push('/home');
+                    navigate('/home');
                 }
             })
     };

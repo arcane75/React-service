@@ -4,6 +4,7 @@ import useAuth from '../../hooks/useAuth';
 import AboutUs from '../AboutUs/AboutUs';
 import AddPackage from '../AddPackage/AddPackage';
 import ContactUs from '../ContactUs/ContactUs';
+import Header from '../Header/Header';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import ManageAllOrder from '../ManageAllOrder/ManageAllOrder';
 import ManageProducts from '../ManageProducts/ManageProducts';
@@ -17,6 +18,7 @@ const Admin = () => {
 
   return (
     <div className="admin-container">
+      <Header></Header>
 
       <div className="row admin-container">
         <div className="col-md-3 admin-side">

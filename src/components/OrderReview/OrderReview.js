@@ -2,13 +2,14 @@ import React from 'react';
 import useCart from '../../hooks/useCart';
 import Cart from '../Cart/Cart';
 import { removeFromDb } from '../../utilities/fakedb';
-import { useHistory } from 'react-router';
+import { useNavigate } from "react-router-dom";
 import ReviewItem from '../ReviewItem/ReviewItem';
+import Header from '../Header/Header';
 
 const OrderReview = () => {
     const [cart, setCart] = useCart();
     console.log('orderReview page', cart);
-    const history = useHistory();
+    let navigate = useNavigate();
 
     const handleRemove = key => {
         const newCart = cart.filter(product => product.key !== key);
@@ -17,11 +18,12 @@ const OrderReview = () => {
     }
 
     const handleProceedToShipping = () => {
-        history.push('/shipping');
+        navigate('/shipping');
     }
    
     return (
         <div className="container">
+            <Header></Header>
            <div className="row">
            <div className="col-md-8">
                 {
